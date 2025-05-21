@@ -12,7 +12,7 @@
 #include <random>
 #include <vector>
 
-#include "fast_ica.cpp"  // FastICAクラスのインクルード
+#include "fast_ica.hpp"  // FastICAクラスのインクルード
 
 // ファイル出力関数の定義
 void output_file(const char* fpath, double datas[3][2048], double t[2048]) {

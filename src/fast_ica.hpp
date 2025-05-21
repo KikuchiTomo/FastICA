@@ -49,6 +49,7 @@ class FastICA {
     }
 
     void __whitening() {
+       
         conv_ = (x_ * x_.transpose()) / (cols_ - 1);
 
         Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> eigen_solver(conv_);
@@ -75,8 +76,7 @@ class FastICA {
             for (int iter = 0; iter < max_iter_; iter++) {
                 Eigen::VectorXd w_prv = w;
 
-                // g(x) = tanh(x)
-                // VecotrXd のスペルミス修正
+                // g(x) = tanh(x) を採用
                 Eigen::VectorXd wx = w.transpose() * z_;
                 Eigen::VectorXd g_wx(cols_);
                 Eigen::VectorXd g_p_wx(cols_);

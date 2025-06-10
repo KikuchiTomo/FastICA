@@ -1,7 +1,7 @@
 /**
  * @file main.cpp
  * @brief FastICA implementation test
- * @author Based on Kikuchi Tomoo's implementation
+ * @author Kikuchi Tomoo
  * @date 2025-05-21
  */
 
